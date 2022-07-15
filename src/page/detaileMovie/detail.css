@@ -1,0 +1,92 @@
+.banner {
+  height: 50vh;
+  position: relative;
+  background-image: url("./../../assets/img/bannerBG.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(0deg, #0f0f0f, transparent);
+  width: 100%;
+  height: 100px;
+}
+.detail-movie {
+  margin-top: -160px;
+  margin-bottom: 48px;
+  position: relative;
+  display: flex;
+  padding: 0 180px;
+  margin-right: 12px;
+  width: 100%;
+  height: 600px;
+}
+.poster-movie {
+  width: 54%;
+}
+.poster-movie img {
+  transition: all 0.3s ease;
+  border-radius: 32px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.poster-movie img:hover {
+  transform: scale(1.05);
+}
+.info-movie {
+  margin-left: 32px;
+}
+.title-movie {
+  font-size: 64px;
+  margin-bottom: 32px;
+}
+.hastag-movie {
+  display: flex;
+  margin-bottom: 32px;
+}
+.hastag-movie p {
+  margin-right: 12px;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 2px 20px;
+  font-size: 14px;
+}
+.cast-movie {
+  margin-top: 32px;
+}
+.casting {
+  display: flex;
+}
+.casting-item {
+  width: 90px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.video-container {
+  margin: 0 32px;
+  font-size: 20px;
+}
+.similar {
+  margin-top: 32px;
+}
+.similar .title {
+  margin-left: 60px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,51 @@
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: translateY(0);
+  }
+}
+.btn-container {
+  display: flex;
+  width: 100%;
+  animation: fadeInDown 0.9s linear;
+  letter-spacing: 1px;
+}
+.btn-watch {
+  width: 168px;
+  height: 48px;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  background-color: red;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0 0 7px 8px rgba(255, 0, 0, 0.30196078431372547);
+  transition: box-shadow 0.3s ease;
+}
+.btn-watch:hover {
+  cursor: pointer;
+  box-shadow: 0 0 7px 8px rgba(254, 0, 0, 0.611);
+}
+.btn-trailer {
+  width: 168px;
+  height: 48px;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #fff;
+  transition: 0.3s ease;
+  font-weight: 600;
+  margin-left: 16px;
+}
+.btn-trailer:hover {
+  background-color: #fff;
+  color: red;
+  cursor: pointer;
+}

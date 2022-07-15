@@ -1,0 +1,80 @@
+// @use "./scss/" as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+@media (hover: hover) {
+  a:hover {
+    color: red;
+  }
+  li:hover {
+    color: red;
+  }
+  i:hover {
+    color: red;
+  }
+}
+
+button,
+input {
+  outline: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+li {
+  padding-right: 20px;
+  cursor: pointer;
+}
+i{
+  cursor: pointer;
+}
+.section{
+  margin: 0 60px;
+  padding-bottom: 36px;
+  display: flex;
+  justify-content: space-between;
+  &-btn{
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 30px;
+    padding: 6px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s ease;
+    &:hover{
+      background-color: #fff;
+      color: red;
+      cursor: pointer;
+    }
+  }
+}
