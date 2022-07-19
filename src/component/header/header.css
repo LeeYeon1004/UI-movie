@@ -38,6 +38,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  transition: 0.3s ease;
 }
 .search-icon-nav {
   color: #fff;
@@ -47,7 +48,9 @@
   right: 8px;
   border-color: transparent;
 }
-.search-icon-nav:hover ~ .search-input {
+.search-input {
+  width: 0;
+  border: none;
   display: inline-block;
   padding: 4px 4px 4px 12px;
   width: 250px;
@@ -56,11 +59,6 @@
   background-color: #000;
   border: 1px solid #fff;
   color: #dadada;
-}
-.search-input {
-  width: 0;
-  border: none;
-  transition: 0.3s ease;
 }
 .icon-nav {
   margin-left: 25px;

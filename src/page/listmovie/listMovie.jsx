@@ -29,8 +29,9 @@ import grayman from "./../../assets/img/grayman.jpg";
 import turning from "./../../assets/img/turning red.jpg";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import readApi from "../../config/readApi.jsx";
 
-const listImg = [
+const listImgs = [
   {
     img: doctor,
     name: "Doctor Strange in the Multiverse of Madness",
@@ -94,7 +95,7 @@ const listImg = [
 
   {
     img: BlackPhone,
-    name: "Doctor Strange in the Multiverse of Madness",
+    name: "The black phone",
   },
   {
     img: lightYear,
@@ -154,23 +155,36 @@ const listImg = [
   },
 ];
 function ListMovie() {
-  const [list, setList] = useState(listImg.slice(0, 10));
+  const [list, setList] = useState(listImgs.slice(0, 10));
   const [show, setShow] = useState(false);
+  const [movie, setMovie] = useState("");
   const buttonRef = useRef();
 
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, []);
+  useEffect(() => {
     if (show) {
-      setList(listImg.slice(0));
+      setList(listImgs.slice(0));
       buttonRef.current.classList.add("hide");
     } else {
-      setList(listImg.slice(0, 10));
+      setList(listImgs.slice(0, 10));
       buttonRef.current.classList.remove("hide");
     }
   }, [show]);
 
+  const fetchApi = async () => {
+    const result = await readApi();
+    console.log(result);
+  };
+  fetchApi();
+
   const handleShow = () => {
     setShow(!show);
+  };
+  const handleSearch = () => {
+    setList(listImgs.filter((item) => item.name.toLowerCase().includes(movie)));
+    setMovie("");
   };
   return (
     <>
@@ -180,8 +194,15 @@ function ListMovie() {
       </div>
       <div className="container-search">
         <div className="search">
-          <input type="text" placeholder="Enter keyword" />
-          <button className="search-btn">Tìm kiếm</button>
+          <input
+            value={movie}
+            onChange={(e) => setMovie(e.target.value.toLowerCase())}
+            type="text"
+            placeholder="Enter keyword"
+          />
+          <button className="search-btn" onClick={handleSearch}>
+            Tìm kiếm
+          </button>
         </div>
         <div className="movie-list-container">
           {list.map((item, index) => (
@@ -189,7 +210,7 @@ function ListMovie() {
               <a href=".">
                 <div style={{ position: `relative` }}>
                   <img src={item.img} alt="" />
-                  <Link to="detail">
+                  <Link to="../detail">
                     <button className="watch-btn">
                       <i class="fa-solid fa-play"></i>
                     </button>

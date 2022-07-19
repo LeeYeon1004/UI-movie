@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import React from "react";
 import "./header.css";
@@ -6,6 +6,7 @@ import logo from "./Netflix_2015_logo.svg.png";
 
 function Header() {
   const headerRef = useRef();
+  const [input, setInput] = useState(false);
 
   useEffect(() => {
     const scroll = () => {
@@ -23,6 +24,9 @@ function Header() {
       window.removeEventListener("scroll", scroll);
     };
   }, []);
+  const handleInput = () => {
+    setInput(!input);
+  };
 
   return (
     <div ref={headerRef} className="header-nav">
@@ -44,21 +48,23 @@ function Header() {
             <Link to="/">Mới & phổ biến</Link>
           </li>
           <li>
-            <Link to="/">Danh sách của tôi</Link>
+            <Link to="list">Danh sách của tôi</Link>
           </li>
         </ul>
       </div>
       <div className="secondary-nav">
-        <form className="search-nav">
-          <button className="search-icon-nav">
+        <div className="search-nav">
+          <button onClick={handleInput} className="search-icon-nav">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-          <input
-            className="search-input"
-            type="text"
-            placeholder="Phim, diễn viên, thể loại"
-          />
-        </form>
+          {input && (
+            <input
+              className="search-input"
+              type="text"
+              placeholder="Phim, diễn viên, thể loại"
+            />
+          )}
+        </div>
         <i class="fa-solid fa-bell icon-nav"></i>
         <i class="fa-solid fa-gear icon-nav"></i>
       </div>
