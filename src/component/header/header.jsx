@@ -48,7 +48,7 @@ function Header() {
             <Link to="/">Mới & phổ biến</Link>
           </li>
           <li>
-            <Link to="list">Danh sách của tôi</Link>
+            <Link to="../list">Danh sách của tôi</Link>
           </li>
         </ul>
       </div>
