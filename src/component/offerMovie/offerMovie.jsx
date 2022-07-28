@@ -15,6 +15,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/HhIl_XJ-OGA",
     createdAt: "2022-07-18T10:47:01.000Z",
     updatedAt: "2022-07-18T10:47:01.000Z",
+    slug: "Minions-The-Rise-of-Gru",
   },
   {
     id: 10,
@@ -25,6 +26,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/ZhER40Kkmbk",
     createdAt: "2022-07-19T02:00:45.000Z",
     updatedAt: "2022-07-19T02:00:45.000Z",
+    slug: "Doctor-Strange-in-the-Multiverse-of-Madness",
   },
   {
     id: 11,
@@ -35,6 +37,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/_KwZ1tuibHw",
     createdAt: "2022-07-19T02:04:48.000Z",
     updatedAt: "2022-07-19T02:04:48.000Z",
+    slug: "9-Bullets",
   },
   {
     id: 12,
@@ -45,6 +48,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/UmDxTrJa3XA",
     createdAt: "2022-07-19T02:11:56.000Z",
     updatedAt: "2022-07-19T02:11:56.000Z",
+    slug: "Collision",
   },
   {
     id: 13,
@@ -55,6 +59,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/7oIM33zm0v8",
     createdAt: "2022-07-19T02:12:52.000Z",
     updatedAt: "2022-07-19T02:12:52.000Z",
+    slug: "Fantastic-Beasts-The-Secrets-of-Dumbledore",
   },
   {
     id: 14,
@@ -65,6 +70,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/saitwklE2zk",
     createdAt: "2022-07-19T02:13:48.000Z",
     updatedAt: "2022-07-19T02:13:48.000Z",
+    slug: "Jurassic-World-Dominion",
   },
   {
     id: 15,
@@ -75,6 +81,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/lWcD2icgoGs",
     createdAt: "2022-07-19T02:14:50.000Z",
     updatedAt: "2022-07-19T02:14:50.000Z",
+    slug: "The-Lost-City",
   },
   {
     id: 16,
@@ -85,6 +92,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/ye63hQLDj4k",
     createdAt: "2022-07-19T02:16:42.000Z",
     updatedAt: "2022-07-19T02:16:42.000Z",
+    slug: "Memory",
   },
   {
     id: 17,
@@ -95,6 +103,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/N1-8SLr7oCE",
     createdAt: "2022-07-19T02:17:49.000Z",
     updatedAt: "2022-07-19T02:17:49.000Z",
+    slug: "Mobius",
   },
   {
     id: 18,
@@ -105,6 +114,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/3U09a_Gyv6w",
     createdAt: "2022-07-19T02:18:39.000Z",
     updatedAt: "2022-07-19T02:18:39.000Z",
+    slug: "Shark-Bait",
   },
   {
     id: 19,
@@ -115,6 +125,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/M1kNc7xTwSs",
     createdAt: "2022-07-19T02:21:11.000Z",
     updatedAt: "2022-07-19T02:21:11.000Z",
+    slug: "Sonic-the-Hedgehog-2",
   },
   {
     id: 20,
@@ -125,6 +136,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/vG7-hKnYcxQ",
     createdAt: "2022-07-19T02:22:33.000Z",
     updatedAt: "2022-07-19T02:22:33.000Z",
+    slug: "Spider-Man-No-Way-Home",
   },
   {
     id: 21,
@@ -135,6 +147,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/Qsg6ZjZExgs",
     createdAt: "2022-07-19T02:23:30.000Z",
     updatedAt: "2022-07-19T02:23:30.000Z",
+    slug: "The-Ledge",
   },
   {
     id: 22,
@@ -145,6 +158,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/sN3HEtWOcjA",
     createdAt: "2022-07-19T02:24:31.000Z",
     updatedAt: "2022-07-19T02:24:31.000Z",
+    slug: "Thor-Love-and-Thunder",
   },
   {
     id: 23,
@@ -155,6 +169,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/3U7KaI_NPGg",
     createdAt: "2022-07-19T02:25:15.000Z",
     updatedAt: "2022-07-19T02:25:15.000Z",
+    slug: "Turning-Red",
   },
   {
     id: 24,
@@ -165,6 +180,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/VbBX8gtZoII",
     createdAt: "2022-07-19T02:26:18.000Z",
     updatedAt: "2022-07-19T02:26:18.000Z",
+    slug: "The-black-phone",
   },
   {
     id: 25,
@@ -175,6 +191,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/vOIkBdhTaYs",
     createdAt: "2022-07-19T02:27:48.000Z",
     updatedAt: "2022-07-19T02:27:48.000Z",
+    slug: "Lightyear",
   },
   {
     id: 26,
@@ -185,6 +202,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/xy7nx8fKk7M",
     createdAt: "2022-07-19T02:28:44.000Z",
     updatedAt: "2022-07-19T02:28:44.000Z",
+    slug: "Chickenhare-and-the-Hamster-of-Darkness",
   },
   {
     id: 27,
@@ -195,6 +213,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/i0YxNp-Moc4",
     createdAt: "2022-07-19T02:29:29.000Z",
     updatedAt: "2022-07-19T02:29:29.000Z",
+    slug: "Superwho?",
   },
   {
     id: 28,
@@ -205,6 +224,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/i0YxNp-Moc4",
     createdAt: "2022-07-19T02:31:15.000Z",
     updatedAt: "2022-07-19T02:31:15.000Z",
+    slug: "Fireheart",
   },
   {
     id: 29,
@@ -215,6 +235,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/7_GXTLJxoa8",
     createdAt: "2022-07-19T02:32:27.000Z",
     updatedAt: "2022-07-19T02:32:27.000Z",
+    slug: "DC-League-of-Super-Pets",
   },
   {
     id: 30,
@@ -225,6 +246,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/XumXdNoZKlg",
     createdAt: "2022-07-19T02:33:17.000Z",
     updatedAt: "2022-07-19T02:33:17.000Z",
+    slug: "Cube",
   },
   {
     id: 31,
@@ -235,6 +257,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/zYVZMei0_tI",
     createdAt: "2022-07-19T02:34:14.000Z",
     updatedAt: "2022-07-19T02:34:14.000Z",
+    slug: "X",
   },
   {
     id: 32,
@@ -245,6 +268,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/pt81CJcWZy8",
     createdAt: "2022-07-19T02:35:32.000Z",
     updatedAt: "2022-07-19T02:35:32.000Z",
+    slug: "Men",
   },
   {
     id: 33,
@@ -255,6 +279,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/dxGReS_Cnrc",
     createdAt: "2022-07-19T02:36:18.000Z",
     updatedAt: "2022-07-19T02:36:18.000Z",
+    slug: "Nope",
   },
   {
     id: 34,
@@ -265,6 +290,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/fBpdF_Vrh40",
     createdAt: "2022-07-19T02:39:10.000Z",
     updatedAt: "2022-07-19T02:39:10.000Z",
+    slug: "The-Gray-Man",
   },
   {
     id: 35,
@@ -275,6 +301,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/fBpdF_Vrh40",
     createdAt: "2022-07-19T02:42:30.000Z",
     updatedAt: "2022-07-19T02:42:30.000Z",
+    slug: "Confessions-of-a-Hitman",
   },
   {
     id: 36,
@@ -285,6 +312,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/KElCq5eCegE",
     createdAt: "2022-07-19T02:43:25.000Z",
     updatedAt: "2022-07-19T02:43:25.000Z",
+    slug: "Top-Gun-Maverick",
   },
   {
     id: 37,
@@ -294,6 +322,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/Zd7Tm9DM9EE",
     createdAt: "2022-07-20T04:19:10.000Z",
     updatedAt: "2022-07-20T04:19:10.000Z",
+    slug: "Cro-Minion",
   },
   {
     id: 38,
@@ -304,6 +333,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/Zd7Tm9DM9EE",
     createdAt: "2022-07-20T04:20:14.000Z",
     updatedAt: "2022-07-20T04:20:14.000Z",
+    slug: "Despicable-Me-Presents-Minion-Madness",
   },
   {
     id: 39,
@@ -314,6 +344,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/Zd7Tm9DM9EE",
     createdAt: "2022-07-20T04:22:51.000Z",
     updatedAt: "2022-07-20T04:22:51.000Z",
+    slug: "Minion-Scouts",
   },
   {
     id: 40,
@@ -324,6 +355,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/3Zibb6lVCRw",
     createdAt: "2022-07-20T04:25:22.000Z",
     updatedAt: "2022-07-20T04:25:22.000Z",
+    slug: "Despicable-Me-Minion-Mayhem",
   },
   {
     id: 41,
@@ -334,6 +366,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/3Zibb6lVCRw",
     createdAt: "2022-07-20T04:30:41.000Z",
     updatedAt: "2022-07-20T04:30:41.000Z",
+    slug: "Minions-The-Rise-of-Gru",
   },
   {
     id: 42,
@@ -344,6 +377,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/3Zibb6lVCRw",
     createdAt: "2022-07-20T04:31:31.000Z",
     updatedAt: "2022-07-20T04:31:31.000Z",
+    slug: "Minions",
   },
   {
     id: 43,
@@ -354,6 +388,7 @@ const listMovie = [
     link: "https://www.youtube.com/embed/3Zibb6lVCRw",
     createdAt: "2022-07-20T04:31:53.000Z",
     updatedAt: "2022-07-20T04:31:53.000Z",
+    slug: "Illumination-Presents-10-Minion-Mini-Movies",
   },
 ];
 
@@ -380,7 +415,7 @@ function OfferMovie() {
             <a href=".">
               <div style={{ position: `relative` }}>
                 <img src={item.image} alt="" />
-                <Link to="detail">
+                <Link to={`../detail/${item.slug}`}>
                   <button className="watch-btn">
                     <i class="fa-solid fa-play"></i>
                   </button>

@@ -7,7 +7,6 @@ import { useEffect } from "react";
 
 function Home() {
   useEffect(() => {
-    document.title = "MovieAppReact";
     window.scrollTo(0, 0);
   }, []);
   return (

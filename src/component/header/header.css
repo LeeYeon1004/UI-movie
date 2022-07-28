@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
 }
 .header-nav.scroll {
   background-color: #000;
