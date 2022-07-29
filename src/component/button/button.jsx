@@ -4,7 +4,7 @@ import "./button.css";
 function button(props) {
   return (
     <div className="btn-container">
-      <Link to="detail">
+      <Link to={`../detail/${props.slug}`}>
         <button className="btn-watch">Watch now</button>
       </Link>
       <button onClick={props.handleClick} className="btn-trailer">
